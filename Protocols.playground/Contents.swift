@@ -11,7 +11,7 @@ class Person {
     var favoriteFood: String
     
     var description: String {
-        return "Name: \(jim.name) \nHeight: \(jim.height) \nFavorite Food: \(jim.favoriteFood)"
+        return "Name: \(self.name) \nHeight: \(self.height) \nFavorite Food: \(self.favoriteFood)"
     }
     
     init(name: String, height: Double, favoriteFood: String) {
@@ -22,9 +22,22 @@ class Person {
     
 }
 
-let jim = Person(name: "Jim", height: 64.0, favoriteFood: "Pasta")
+var eli = Person(name: "eli", height: 8.9, favoriteFood: "burger")
+print(eli.name)
+//let jim = Person(name: "Jim", height: 64.0, favoriteFood: "Pasta")
+//
+//print(jim.description)
 
-print(jim.description)
+
+//class Dog {
+//    var name: String
+//    var height: Double
+//    var favoriteFood: String
+//    
+//    var description: String {
+//        return "Name: \"
+//    }
+//}
 //Name: Jim
 //Height: 64.0
 //Favorite Food: Pasta
